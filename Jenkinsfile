@@ -41,6 +41,21 @@ pipeline {
                 }
             }
         }
+        stage('test') {
+            steps {
+                script {
+                    echo 'testing the doeployment...'
+                }
+            }
+        }
+
+        stage('deploy') {
+            steps {
+                script {
+                    echo 'deploying docker image uisng the increment version in jenkins...'
+                }
+            }
+        }
         
     }
 }
