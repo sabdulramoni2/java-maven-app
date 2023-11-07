@@ -44,7 +44,7 @@ pipeline {
         stage('test') {
             steps {
                 script {
-                    echo 'testing the doeployment...'
+                    echo 'testing the doeployment....'
                 }
             }
         }
